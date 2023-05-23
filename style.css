@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: 52px;
+  color: #fff;
+  text-align: center;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  background-color: #0b1c51;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+/* When browser screen is lager than 600px */
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  header h1 {
+    margin: 14px 0;
+    font-size: 48px;
+  }
+  header nav{
+    margin-top: 15px;
+  }
+  header nav ul li a:hover{
+    color: #bdbdbd;
+  }
+}
